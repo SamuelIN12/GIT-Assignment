@@ -30,7 +30,18 @@ public class LinkText {
        le.setData(4);
        mylist.addElement(le);
        
-		
-	}
+       ListElement value = new ListElement();
+       value = mylist.getElement(3);
+       System.out.format("The value is: " + value.getData() + "\n");
+       
+       mylist.printLinkedListHead();
+       
+       mylist.deleteElement(3);
+       mylist.printLinkedListHead();
+       
+       System.out.format("The value is set to 5\n");
+       System.out.println(le.getData());
+   }
+    
 
 }
