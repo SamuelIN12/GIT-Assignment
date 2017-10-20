@@ -14,6 +14,22 @@ public class LinkText {
    public static void main(String[] args) {
 		// TODO Auto-generated method stub
        
+       
+       ListElement le = new ListElement();
+       LinkedList mylist = new LinkedList();
+       System.out.format("List added\n");
+       
+       le.setData(0);
+       mylist.addElement(le);
+       le.setData(1);
+       mylist.addElement(le);
+       le.setData(2);
+       mylist.addElement(le);
+       le.setData(3);
+       mylist.addElement(le);
+       le.setData(4);
+       mylist.addElement(le);
+       
 		
 	}
 
