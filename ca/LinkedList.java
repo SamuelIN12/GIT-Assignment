@@ -18,5 +18,24 @@ public class LinkedList {
     private int counter=0;
     private int data;
     
+    public void addElement(ListElement le)
+    {
+        ListElement tempPtr;
+        tempPtr = new ListElement(null, le.getData());
+        
+        if (head == null)
+        {
+            head = tempPtr;
+            tail = head;
+        }
+        else
+        {
+            tail.setNext(tempPtr);
+            tail = tempPtr;
+        }
+        incrementCounter();
+    }
+    
+    
     
 }
