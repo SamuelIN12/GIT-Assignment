@@ -13,4 +13,10 @@ import com.*;
  */
 public class LinkedList {
     
+    private ListElement head;
+    private ListElement tail;
+    private int counter=0;
+    private int data;
+    
+    
 }
