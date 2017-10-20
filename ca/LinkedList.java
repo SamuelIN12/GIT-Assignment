@@ -66,20 +66,32 @@ public class LinkedList {
         return null;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    public ListElement deleteElement(int index)
+    {
+        ListElement NumPtr = head;
+        ListElement TemPtr = null;
+        
+        if (!(head == null && tail == null))
+        {
+            if (index == 0)
+            {
+                NumPtr = NumPtr.getNext();
+                NumPtr.setNext(NumPtr.getNext());
+                head = NumPtr;
+            }
+            else
+            {
+                
+                for (int i = 1; i < index; i++)
+                    NumPtr = NumPtr.getNext();
+                
+                
+                TemPtr = NumPtr.getNext();
+                NumPtr.setNext(NumPtr.getNext().getNext());
+            }
+        }
+        return null;
+    }
     
     
     public void printLinkedListHead()
@@ -92,6 +104,6 @@ public class LinkedList {
             System.out.println("List Element from head are: " + currentPtr.getData() + "\n");
             currentPtr = currentPtr.getNext();
         }
-    
+    }
     
 }
