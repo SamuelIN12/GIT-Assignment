@@ -47,4 +47,32 @@ public class LinkedList {
     }
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public void printLinkedListHead()
+    {
+        ListElement currentPtr = new ListElement();
+        
+        currentPtr=head;
+        while(currentPtr != null)
+        {
+            System.out.println("List Element from head are: " + currentPtr.getData() + "\n");
+            currentPtr = currentPtr.getNext();
+        }
+    
+    
 }
