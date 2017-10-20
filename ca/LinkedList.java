@@ -36,6 +36,15 @@ public class LinkedList {
         incrementCounter();
     }
     
+    public  void incrementCounter()
+    {
+        counter++;
+    }
+    
+    private void decrementCounter()
+    {
+        counter--;
+    }
     
     
 }
