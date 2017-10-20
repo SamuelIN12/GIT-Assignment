@@ -46,6 +46,25 @@ public class LinkedList {
         counter--;
     }
     
+    @SuppressWarnings("null")
+    public ListElement getElement(int index)
+    
+    {
+        
+        ListElement CurrPtr = new ListElement();
+        if (head != null)
+        {
+            CurrPtr = head;
+            for (int i = 0; i < index; i++)
+            {
+                if (CurrPtr.getNext() == null)
+                {return null;}
+                CurrPtr = CurrPtr.getNext();
+            }
+            return CurrPtr;
+        }
+        return null;
+    }
     
     
     
