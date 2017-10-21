@@ -13,15 +13,17 @@ import com.*;
  */
 public class LinkedList {
     
+    
     private ListElement head;
     private ListElement tail;
     private int counter=0;
     private int data;
     
+    
     public void addElement(ListElement le)
     {
         ListElement tempPtr;
-        tempPtr = new ListElement(null, le.getData());
+        tempPtr = new ListElement(le.getData(), null, null);
         
         if (head == null)
         {
@@ -30,6 +32,7 @@ public class LinkedList {
         }
         else
         {
+            tempPtr.setPrevious(tail);
             tail.setNext(tempPtr);
             tail = tempPtr;
         }
@@ -93,7 +96,6 @@ public class LinkedList {
         return null;
     }
     
-    
     public void printLinkedListHead()
     {
         ListElement currentPtr = new ListElement();
@@ -105,6 +107,7 @@ public class LinkedList {
             currentPtr = currentPtr.getNext();
         }
     }
+    
     
     public void printLinkedListTail()
     {
