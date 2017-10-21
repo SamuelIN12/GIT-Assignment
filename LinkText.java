@@ -39,6 +39,9 @@ public class LinkText {
        mylist.deleteElement(3);
        mylist.printLinkedListHead();
        
+       System.out.format("Printing from tail: " + "\n");
+       mylist.printLinkedListTail();
+       
        System.out.format("The value is set to 5\n");
        System.out.println(le.getData());
    }
