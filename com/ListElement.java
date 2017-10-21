@@ -28,6 +28,13 @@ public class ListElement {
         this . next = nextValue ;
     }
     
+    public ListElement (int data1, ListElement nextValue, ListElement preValue)
+    {
+        this . data = data1;
+        this . next = nextValue;
+        this.previous = preValue;
+    }
+    
     public void setData ( int data)
     {
         this . data = data ;
@@ -53,6 +60,6 @@ public class ListElement {
     {
         previous = PreValue;
     }
-
-
+    
+    
 }
