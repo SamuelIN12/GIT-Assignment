@@ -45,6 +45,14 @@ public class ListElement {
         next = nextVal;
     }
     
+    public ListElement getPrevious()
+    {
+        return previous;
+    }
+    public void setPrevious(ListElement PreValue)
+    {
+        previous = PreValue;
+    }
 
 
 }
