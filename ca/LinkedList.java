@@ -106,4 +106,17 @@ public class LinkedList {
         }
     }
     
+    public void printLinkedListTail()
+    {
+        ListElement currentPtr = new ListElement();
+        
+        currentPtr = tail;
+        while(currentPtr != null)
+        {
+            System.out.println("List Element from head are: " + currentPtr.getData() + "\n");
+            currentPtr = currentPtr.getPrevious();
+        }
+    }
+    
+    
 }
